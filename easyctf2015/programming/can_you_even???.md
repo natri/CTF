@@ -3,6 +3,14 @@ Use the programming interface to complete this task. You'll be given a list of n
 * Input: A list of numbers, separated by commas.
 * Output: The number of even numbers.
 * Read the input from a file called can-you-even.in that's in the current working directory, and then write your output to a file called can-you-even.out.
+
+#solution
+1. Open the file
+2. Read in the comma separated list but instantly put it into a list
+3. Cycle through every item
+   1. Test to see if number is even by doing modulus math looking for remainder to be zero
+   2. Add to total if even
+4. Write total to the correct file and close
 ````
 f1 = open('can-you-even.in','r')
 input = f1.readline().split(',')
